@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D shirt</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div id="left-banner">
+      <img src="./assets/banner.jpg" alt="Banner" id="banner-image" />
+    </div>
+
+    <!-- 3D Scene Container -->
+    <div id="container">
+      <div id="loading-bar-container">
+        <div id="loading-bar"></div>
+        <span id="loading-text">Loading... 0%</span>
+      </div>
+    </div>
+
+    <button id="settings-btn" class="settings-btn">
+      <i class="fas fa-cogs"></i> 
+    </button>
+    <div id="control-panel" class="control-panel">
+      <button id="texture-1" class="texture-btn">Texture 1</button>
+      <button id="texture-2" class="texture-btn">Texture 2</button>
+    </div>
+
+    
+
+    <!-- External Scripts -->
+    <script src="./assets/three.min.js"></script>
+    <script src="./assets/GLTFLoader.js"></script>
+    <script src="./assets/OrbitControls.js"></script>
+    <script src="./assets/scripts.js"></script>
+  </body>
+</html>
